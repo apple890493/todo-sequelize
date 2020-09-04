@@ -16,6 +16,22 @@ app.get('/', (req, res) => {
   res.send('hi')
 })
 
+app.get('/users/login', (req, res) => {
+  res.render('login')
+})
+
+app.post('/users/login', (req, res) => {
+  res.render('login')
+})
+
+app.get('/users/register', (req, res) => {
+  res.render('register')
+})
+
+app.post('/users/register', (req, res) => {
+  res.render('register')
+})
+
 
 app.listen(PORT, () => {
   console.log(`running on localhost:${PORT}`)
